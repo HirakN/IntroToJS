@@ -15,13 +15,15 @@ var exit_flag = "y";
 while(exit_flag === "y") {
 	var choice = parseInt(prompt("Welcome to fizzbuzz. Enter a number: "));
 	alert(fizzBuzz(choice));
-
 	exit_flag =  prompt("Would you like to continue (y/n): ");
 }
 
-var counter = 1;
+// var counter = 1;
+// while (counter < 100) {
+// 	console.log(fizzBuzz(counter));
+// 	counter++;
+// }
 
-while (counter < 100) {
+for (var counter = 1; counter <= 100; counter++) {
 	console.log(fizzBuzz(counter));
-	counter++;
 }
